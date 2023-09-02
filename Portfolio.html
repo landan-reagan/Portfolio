@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <title>Your Name - Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 style="font-size: 40px;">Landan Reagan</h1>
+        
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="about" style="margin-top: 100px;">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a third year Electrical and Computer Engineering student with a minor in Mechatronics with a passion for the automotive industry. My previous work expereince in Reliability Engineering, Telemetry Systems, and Machine Learning make me an excellent candidate for driving sustainable, innovative, solutions in your company.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Work Experience</h2>
+
+      <div class="experience-item">
+        <h3>Electrical Engineering Reliability Coop / Canadian Natural Resources Ltd / Fort McMurray, AB</h3>
+        <p class="job-description">
+          Working with the Master Electricians on the Electrical Reliability team of CNRLs Horizon operations, I applied my knowledge in data science and electrical troubleshooting to ensure the safe, reliable, and efficient operation of the bitumen production facilities.</p>
+
+          <ul class="skills" style="margin-top: 30px;">
+            <li>SQL</li>
+            <li>Data Mining</li>
+            <li>Data Cleaing</li>
+            <li>Data Analysis</li>
+            <li>SLD Analysis</li>
+            <li>4 Disciplines of Execution</li>
+          </ul>
+          <p style="margin-top: 10px;">
+            Out of all the contributions listed for this role, this one had the most significant and immediate impact on my team.
+            At Horizon, we followed The 4 Disciplines of Execution (4DX) for Continous Improvement.
+            Following the 4DX principles, the Relibaility team set the Wildly Important Goal (WIG) of ensuring our asset tracking software was complete with all the necessary asset infomrmation for our plant.
+            When I joined, I became a member of the Instrumentation teams WIG where they were finalizing their collection of all the production critical instruments on site.
+            To achieve this, I aided in analyzing Single Line Diagrams (SLD's) to determine the criticality of the instrumentation assets.
+            After we collected all of the production crticial instrumentation assets, our next task was to conduct an audit on our asset tracking software.
+            On site, we have over 2300 critical instrumentation assets that needed to be audited.
+            By manually completing 40 audits per week as per the alloted 4 hours per week to work on the WIG, the estimated timeline for completion was 14 months.
+            After some networking with the IT team, I gained access to the SQL server hosting our asset tracking website.
+            Using my previous experience with SQL gained in my Telemetry Systems Coop for Teck Resources, I was able to query and clean all the required information within 2 weeks (8 total hours).
+            This completed the second stage of our WIG, saving each member of the instrumentation team 224 hours of work totaling in 672 hours recuperated.
+            Furthermore, I identified over 500 production critical assets that were not present in our tracking software and over 300 assets that had no, or incorrect, spare parts asssociated.
+          </p>
+
+          <ul class="skills" style="margin-top: 30px;">
+            <li>Data Engineering</li>
+            <li>Python Automation</li>
+            <li>Visual Basic for Applications (VBA)</li>
+            <li>Relational Database (RDBMS) Development</li>
+          </ul>
+          <p style="margin-top: 10px;">
+            One of the most time consuming tasks that we encountered on the Reliability team was collecting nameplate information from our assets.
+            On site, we have over 700 Variable Frequency Drives (VFDs) with various control types, sizes, horsepowers, cooling types, and manufactuers (Siemens, Rockwell, ABB, & Toshiba).
+            The nameplate information consisted of Serial Numbers, Project ID's, Make, and Model which was required by our vendors when ordering asset specific spare parts.
+            In the name of continuous improvement, I set out to find a solution to this issue hoping to save my team countless hours of getting work permits, travelling, and taking assets out of production to get this information.
+            After some invesitgation, I discovered a stockpile of downloads that containing nameplate information from drives that electricians collected when troubleshooting VFD faults.
+            These downloads were in .mdb format which made it simple to develop an extraction script using Python.
+            After the extraction, I needed a way to display the information in a way that was sharable and easy to edit when a drive needed to be swapped out.
+            Due to my teams familiarity with Microsoft Access and the team of distribution I opted to develop a new database to store the nameplate information.
+            After the first iteration of the database, I decided to further utilize the platforms relational database tools and incorporate spare parts information and schematic diagrams from other platforms within the company.
+            Since the development of this tool, the team has saved countless hours of manual collection of asset information and streamlined the troubleshooting and repair process with easy access to asset specific spare parts information and electrical schematics.
+          </p>
+
+          <ul class="skills" style="margin-top: 30px;">
+          <li>PLC Programming</li>
+          <li>Variable Frequency Drive (VFD) Troubleshooting</li>
+          <li>Electromechanical Relay Wiring</li>
+        </ul>
+        <p style="margin-top: 10px;">
+          During my time working in the plant, we had multiple incidents where a VFD would trip one or more of their temperature switches. 
+          This would cause the drive to stop working until it cooled off and the temperature switch closed again. 
+          Due to the short duration of the outage and travel time to reach the assets, we were unable to accurately determine which of the four temperature switches were tripping.
+          As a solution to our uncertaintly, I developed a simple asset monitoring device that 'trapped' the signal in a PLC logic holding circuit.
+          To implement the device, we made physical connections between the temperature sensors in the drive and their associated relays on our device.
+          When any of the 4 temperature switches tripped, the signal would be recieved on the input of the PLC which would hold an LED indicator output until an operator was able to reach the drive.
+          The implementation of this device has increased the efficency of our troubleshooting, reduced repair costs, and decreased VFD downtime in the plant.
+        </p>
+        
+        <ul class="skills" style="margin-top: 30px;">
+          <li>VFD Fault Testing</li>
+          <li>VFD Programming</li>
+          <li>Electrical Test Equipment</li>
+          <li>Reading and Interpreting Electrical Schematics</li>
+        </ul>
+        <p style="margin-top: 10px;">
+          Due to the extreme weather conditions and the aging of our facility, we were occasionally susceptible to power dropouts which caused our drives to trip, requiring manual reset prior to returning to operation. 
+          To properly adjust the fault parameters, we designed fault tests on an isolated drive using a Omicron CMC 356 Universal Relay Test and Commisioning Tool. 
+          The basic test setup is as follows:
+        </p>
+        <ol> 
+          <li>Isolate the 4160V power supply and verify mechanical isolation between the motor output shaft and the pump.</li>
+          <li>Disconnect power connections on the supply side of the 120VAC-24VDC converter and connect the Omicron 120V power supply. 
+              This 'tricks' the main control board of the drive into thinking it is powered on and able to operate normally.</li>
+          <li>Run an inverted ramp signal on the Omicron 120V power supply to simulate a voltage drop below 75% expected.</li>
+        </ol>
+        <p>
+          This test enabled greater optimization of the fault relay programming parameters which now account for various types of common outages. 
+          As a result, we are experiencing reduced operational lost time in the event of transient power irregularities.
+        </p>
+      </div>
+
+      <!-- Repeat the experience-item structure for other jobs -->
+      <div class="experience-item">
+        <h3>Job Title 2</h3>
+        <p class="job-description">Description of the job responsibilities and accomplishments.</p>
+        <ul class="skills">
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+        </ul>
+      </div>
+
+      <!-- Repeat for other jobs ... -->
+
+    </div>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <!-- List your projects here -->
+      </div>
+    </section>
+  
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <!-- List your education details here -->
+      </div>
+    </section>
+  
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <!-- Add your contact information and a contact form if needed -->
+      </div>
+    </section>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    const headerHeight = document.querySelector('header').offsetHeight;
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const targetPosition = targetElement.offsetTop - headerHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
