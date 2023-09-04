@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Styles.css">
-  <title>Your Name - Portfolio</title>
+  <title>Landan Reagan - Portfolio</title>
 </head>
 <body>
   <header>
@@ -26,7 +26,8 @@
   <section id="about" style="margin-top: 100px;">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a third year Electrical and Computer Engineering student with a minor in Mechatronics with a passion for the automotive industry. My previous work expereince in Reliability Engineering, Telemetry Systems, and Machine Learning make me an excellent candidate for driving sustainable, innovative, solutions in your company.</p>
+      <p>I am a third year Electrical and Computer Engineering student with a minor in Mechatronics with a passion for the automotive industry. 
+        My previous work expereince in Reliability Engineering, Telemetry Systems, and Machine Learning make me an excellent candidate for driving sustainable, innovative, solutions in your company.</p>
     </div>
   </section>
 
@@ -38,8 +39,9 @@
         <h3>Reliability Coop / Canadian Natural Resources Ltd / Fort McMurray, AB</h3>
         <p class="job-description">
           Working with the Master Electricians on the Electrical Reliability team of CNRLs Horizon operations, I applied my knowledge in data science and electrical troubleshooting to ensure the safe, reliable, and efficient operation of the bitumen production facilities.</p>
-
-          <ul class="skills" style="margin-top: 30px;">
+          
+          <h4>Asset Management Data Analysis</h4>
+          <ul class="skills">
             <li>SQL</li>
             <li>Data Mining</li>
             <li>Data Cleaing</li>
@@ -62,11 +64,12 @@
             Furthermore, I identified over 500 production critical assets that were not present in our tracking software and over 300 assets that had no, or incorrect, spare parts asssociated.
           </p>
 
-          <ul class="skills" style="margin-top: 30px;">
+          <h4>Asset Information Data Extraction and GUI</h4>
+          <ul class="skills">
             <li>Data Engineering</li>
             <li>Python Automation</li>
             <li>Visual Basic for Applications (VBA)</li>
-            <li>Relational Database (RDBMS) Development</li>
+            <li>Relational Database (RDBMS) Development - Microsoft Access</li>
           </ul>
           <p style="margin-top: 10px;">
             One of the most time consuming tasks that we encountered on the Reliability team was collecting nameplate information from our assets.
@@ -81,7 +84,8 @@
             Since the development of this tool, the team has saved countless hours of manual collection of asset information and streamlined the troubleshooting and repair process with easy access to asset specific spare parts information and electrical schematics.
           </p>
 
-          <ul class="skills" style="margin-top: 30px;">
+          <h4>PLC Signal Trap: "Its A Trap!"</h4>
+          <ul class="skills">
           <li>PLC Programming</li>
           <li>Variable Frequency Drive (VFD) Troubleshooting</li>
           <li>Electromechanical Relay Wiring</li>
@@ -90,13 +94,14 @@
           During my time working in the plant, we had multiple incidents where a VFD would trip one or more of their temperature switches. 
           This would cause the drive to stop working until it cooled off and the temperature switch closed again. 
           Due to the short duration of the outage and travel time to reach the assets, we were unable to accurately determine which of the four temperature switches were tripping.
-          As a solution to our uncertaintly, I developed a simple asset monitoring device that 'trapped' the signal in a PLC logic holding circuit.
+          As a solution to our uncertaintly, I work alongside one of our Master Electricians to develop a simple asset monitoring device that 'trapped' the signal in a PLC logic holding circuit.
           To implement the device, we made physical connections between the temperature sensors in the drive and their associated relays on our device.
           When any of the 4 temperature switches tripped, the signal would be recieved on the input of the PLC which would hold an LED indicator output until an operator was able to reach the drive.
           The implementation of this device has increased the efficency of our troubleshooting, reduced repair costs, and decreased VFD downtime in the plant.
         </p>
         
-        <ul class="skills" style="margin-top: 30px;">
+        <h4>Variable Frequency Drive Fault Testing</h4>
+        <ul class="skills">
           <li>VFD Fault Testing</li>
           <li>VFD Programming</li>
           <li>Electrical Test Equipment</li>
@@ -110,7 +115,7 @@
         <ol> 
           <li>Isolate the 4160V power supply and verify mechanical isolation between the motor output shaft and the pump.</li>
           <li>Disconnect power connections on the supply side of the 120VAC-24VDC converter and connect the Omicron 120V power supply. 
-              This 'tricks' the main control board of the drive into thinking it is powered on and able to operate normally.</li>
+              This 'tricks' the main control board of the drive into thinking it is powered on and able to operate normally while mitigating the high voltage risk.</li>
           <li>Run an inverted ramp signal on the Omicron 120V power supply to simulate a voltage drop below 75% expected.</li>
         </ol>
         <p>
@@ -119,53 +124,75 @@
         </p>
       </div>
 
-      <!-- Repeat the experience-item structure for other jobs -->
       <div class="experience-item">
-        <h3>Telemetry Systems Coop / Teck Resources Ltd / Calgary, AB</h3>
-        <p class="job-description">Description of the job responsibilities and accomplishments.</p>
+        <h3>Telemetry Systems Coop / LTE Networks Coop / Teck Resources Ltd / Calgary, AB</h3>
+        <p class="job-description">
+          During my time working for Teck Resources, I worked diligently for two teams: Telemetry Systems and LTE Networks. 
+          The first 8 months of my term was spent working with the two computer science memebers and an electrical engineer on the Telemetry Systems team.
+          This expereince allowed me to become familiar with the maintenace and architecture of our data transfer systems including the physical hardware and data pipelines.
+          In the last 4 months of my Coop term, there was a push for our datalogger to be switched from the WIFI network to LTE network on site.
+          This initiative put me in an excellent position to collaborate with the LTE netowrks team and eventually participate in other projects they were working on.
+        </p>
+          
+        <h4>Equipment Connectivity</h4>
+          <ul class="skills">
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+          </ul>
+
+        <p>
+          Project Description
+        </p>
+
+        <h4>Project 2</h4>
         <ul class="skills">
           <li>Skill 1</li>
           <li>Skill 2</li>
           <li>Skill 3</li>
         </ul>
 
-        <p>
-          Project Description
-        </p>
+      <p>
+        Project Description
+      </p>
       </div>
 
       <div class="experience-item">
         <h3>Contractor / EV Underground / Calgary, AB</h3>
         <p class="job-description">Description of the job responsibilities and accomplishments.</p>
+        
+        <h4>Project 1</h4>
         <ul class="skills">
           <li>Skill 1</li>
           <li>Skill 2</li>
           <li>Skill 3</li>
         </ul>
 
-        <p>
-          Project Description
-        </p>
+      <p>
+        Project Description
+      </p>
       </div>
 
       <div class="experience-item">
         <h3>Engineering Assistant - Shop Assistant / Blue Spark Energy / Calgary, AB</h3>
         <p class="job-description">Description of the job responsibilities and accomplishments.</p>
-        <ul class="skills">
+        
+        <ul class="skills" style="margin-top: 30px;">
           <li>Skill 1</li>
           <li>Skill 2</li>
           <li>Skill 3</li>
         </ul>
 
-        <p>
-          Project Description
-        </p>
+      <p>
+        Project Description
+      </p>
       </div>
 
       <div class="experience-item">
         <h3>Forklift Operator - Order Builder / Coca Cola Canada / Calgary, AB</h3>
         <p class="job-description">Description of the job responsibilities and accomplishments.</p>
-        <ul class="skills">
+        
+        <ul class="skills" style="margin-top: 30px;">
           <li>Skill 1</li>
           <li>Skill 2</li>
           <li>Skill 3</li>
@@ -179,7 +206,8 @@
       <div class="experience-item">
         <h3>Retail Associate / Dollar Tree Canada / Calgary, AB</h3>
         <p class="job-description">Description of the job responsibilities and accomplishments.</p>
-        <ul class="skills">
+        
+        <ul class="skills" style="margin-top: 30px;">
           <li>Skill 1</li>
           <li>Skill 2</li>
           <li>Skill 3</li>
